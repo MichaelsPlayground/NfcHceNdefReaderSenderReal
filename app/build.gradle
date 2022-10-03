@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'de.androidcrypto.androidbottomnavigationown1'
+    namespace 'de.androidcrypto.nfchcendefreadersender'
     compileSdk 32
 
     defaultConfig {
-        applicationId "de.androidcrypto.androidbottomnavigationown1"
+        applicationId "de.androidcrypto.nfchcendefreadersender"
         minSdk 21
         targetSdk 32
         versionCode 1

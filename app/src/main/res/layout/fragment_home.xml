@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home"
+        android:layout_margin="24dp"
+        android:text="This application emulates a NFC card with a NDEF tag (sender) and a receiver for this NDEF tag (reader). Please choose with the menu below."
         android:textSize="24sp" />
 
 </FrameLayout>

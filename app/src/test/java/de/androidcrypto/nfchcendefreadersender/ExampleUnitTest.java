@@ -1,4 +1,4 @@
-package de.androidcrypto.androidbottomnavigationown1;
+package de.androidcrypto.nfchcendefreadersender;
 
 import org.junit.Test;
 
