@@ -1,4 +1,4 @@
-package de.androidcrypto.nfchcendefreadersender;
+package de.androidcrypto.nfchcendefreadersenderreal;
 
 import android.content.Context;
 

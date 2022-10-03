@@ -4,6 +4,8 @@ This app emulates a NFC tag with a NDEF message.
 
 For reading the emulated tag you need the receiver application started on the second device.
 
+This app uses the AID D2760000850101 - this is the official NFC tag 4 class NDEF AID
+
 AndroidManifest.xml for Sender:
 ```plaintext
     <uses-permission android:name="android.permission.NFC" />
@@ -41,7 +43,7 @@ AndroidManifest.xml for Receiver:
 
 The AID in the line is fixed and needs to be the same as in MyHostApduService.java:
 ```plaintext
-<aid-filter android:name="F0394148148100" />
+<aid-filter android:name="D2760000850101" />
 ```
 
 The file is located in res/xml/apduservice.xml:
@@ -55,7 +57,7 @@ apduservice.xml:
     <aid-group android:description="@string/aiddescription"
         android:category="other">
         <!-- Sample for the demo application -->
-        <aid-filter android:name="F0394148148100" />
+        <aid-filter android:name="D2760000850101" />
     </aid-group>
 </host-apdu-service>
 ```

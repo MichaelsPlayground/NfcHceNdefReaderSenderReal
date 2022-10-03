@@ -1,4 +1,4 @@
-package de.androidcrypto.nfchcendefreadersender;
+package de.androidcrypto.nfchcendefreadersenderreal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -148,7 +148,7 @@ public class ReceiveFragment extends Fragment implements NfcAdapter.ReaderCallba
                 String nfcaContent = "IsoDep reading" + "\n";
 
                 // now we run the select command with AID
-                String nfcHecNdefAid = "F0394148148100";
+                String nfcHecNdefAid = "D2760000850101";
                 byte[] aid = Utils.hexStringToByteArray(nfcHecNdefAid);
 
                 byte[] command = selectApdu(aid);

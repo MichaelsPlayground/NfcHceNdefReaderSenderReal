@@ -1,4 +1,4 @@
-package de.androidcrypto.nfchcendefreadersender;
+package de.androidcrypto.nfchcendefreadersenderreal;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

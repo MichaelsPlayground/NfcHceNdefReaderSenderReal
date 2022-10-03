@@ -1,4 +1,4 @@
-package de.androidcrypto.nfchcendefreadersender;
+package de.androidcrypto.nfchcendefreadersenderreal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +28,7 @@ public class MyHostApduService extends HostApduService {
     // We use the default AID from the HCE Android documentation
     // https://developer.android.com/guide/topics/connectivity/nfc/hce.html
     //
-    // Ala... <aid-filter android:name="F0394148148100" />
+    // Ala... <aid-filter android:name="D2760000850101" />
     //
     private static final byte[] APDU_SELECT = {
             (byte)0x00, // CLA	- Class - Class of instruction
@@ -36,7 +36,10 @@ public class MyHostApduService extends HostApduService {
             (byte)0x04, // P1	- Parameter 1 - Instruction parameter 1
             (byte)0x00, // P2	- Parameter 2 - Instruction parameter 2
             (byte)0x07, // Lc field	- Number of bytes present in the data field of the command
-            (byte)0xF0, (byte)0x39, (byte)0x41, (byte)0x48, (byte)0x14, (byte)0x81, (byte)0x00, // NDEF Tag Application name
+            // F0 39 41 48 14 81 00
+            //(byte)0xF0, (byte)0x39, (byte)0x41, (byte)0x48, (byte)0x14, (byte)0x81, (byte)0x00, // NDEF Tag Application name
+            // D2 76 00 00 85 01 01
+            (byte)0xD2, (byte)0x76, (byte)0x00, (byte)0x00, (byte)0x85, (byte)0x01, (byte)0x01, // NDEF Tag Application name
             (byte)0x00  // Le field	- Maximum number of bytes expected in the data field of the response to the command
     };
 
